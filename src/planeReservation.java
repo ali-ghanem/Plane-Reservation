@@ -1,6 +1,10 @@
 
 import java.util.Scanner;
 
+/**
+ * @author Ali Ghanem
+ *
+ */
 public class planeReservation {
 	static char[][] seats = { { 'A', 'B', 'C', 'D' }, { 'A', 'B', 'C', 'D' }, { 'A', 'B', 'C', 'D' },
 			{ 'A', 'B', 'C', 'D' }, { 'A', 'B', 'C', 'D' }, { 'A', 'B', 'C', 'D' }, { 'A', 'B', 'C', 'D' } };
@@ -27,8 +31,12 @@ public class planeReservation {
 		}
 	}
 
-	public static int getIndex(char c) {
-		switch (c) {
+	/**
+	 * @param character
+	 * @return the corresponding index in the array
+	 */
+	public static int getIndex(char character) {
+		switch (character) {
 		case 'A':
 			return 0;
 		case 'B':
