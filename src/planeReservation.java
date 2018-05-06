@@ -46,7 +46,7 @@ public class planeReservation {
 		while (!isFull()) {
 			printSeats();
 			System.out.println("Enter any key to to reserve a seat, or enter X to exit the program...");
-			char check = Character.toUpperCase(scan.next().charAt(0));
+			char check = Character.toUpperCase(scan.nextLine().charAt(0));
 			if (check == 'X') {
 				System.out.println("GoodBeye!!!");
 				System.exit(0);
@@ -57,7 +57,7 @@ public class planeReservation {
 			int row = 0;
 			boolean rowTaken = false;
 			while (!rowTaken) {
-				int checkRow = Character.getNumericValue(scan.next().charAt(0));
+				int checkRow = Character.getNumericValue(scan.nextLine().charAt(0));
 				if (checkRow >= 1 && checkRow <= 7) {
 					row = checkRow;
 					rowTaken = true;
@@ -71,7 +71,7 @@ public class planeReservation {
 			char column = ' ';
 			boolean columnTaken = false;
 			while (!columnTaken) {
-				char checkColumn = Character.toUpperCase(scan.next().charAt(0));
+				char checkColumn = Character.toUpperCase(scan.nextLine().charAt(0));
 				if (checkColumn >= 'A' && checkColumn <= 'D') {
 					column = checkColumn;
 					columnTaken = true;
